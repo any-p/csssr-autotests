@@ -1,0 +1,26 @@
+{
+  "name": "nightwatch-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch tests/*.test.js -e default,firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-js/nightwatch-playground.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pure-js/nightwatch-playground/issues"
+  },
+  "homepage": "https://github.com/pure-js/nightwatch-playground#readme",
+  "dependencies": {
+    "nightwatch": "^1.2.2"
+  },
+  "devDependencies": {
+    "chromedriver": "^76.0.1",
+    "geckodriver": "^1.16.2"
+  }
+}

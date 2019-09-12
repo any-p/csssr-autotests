@@ -12,7 +12,10 @@
         "port": 9515
       },
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "chrome",
+        "chromeOptions" : {
+          "args" : ["headless"]
+       }
       }
     },
     "firefox" : {
@@ -24,7 +27,13 @@
         "port": 4444
       },
       "desiredCapabilities": {
-        "browserName": "firefox"
+        "browserName": "firefox",
+        "acceptInsecureCerts": true,
+          "alwaysMatch": {
+              "moz:firefoxOptions": {
+                  "args": [ "-headless" ]
+              }
+          }
       }
     }
   }
